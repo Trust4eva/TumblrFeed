@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		59EFE4B120277BA80093BE8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EFE4B020277BA80093BE8A /* AppDelegate.swift */; };
-		59EFE4B320277BA80093BE8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EFE4B220277BA80093BE8A /* ViewController.swift */; };
 		59EFE4B620277BA80093BE8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59EFE4B420277BA80093BE8A /* Main.storyboard */; };
 		59EFE4B820277BA80093BE8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59EFE4B720277BA80093BE8A /* Assets.xcassets */; };
 		59EFE4BB20277BA80093BE8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59EFE4B920277BA80093BE8A /* LaunchScreen.storyboard */; };
 		59EFE4C620277BA80093BE8A /* TumblrFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EFE4C520277BA80093BE8A /* TumblrFeedTests.swift */; };
 		59EFE4D120277BA80093BE8A /* TumblrFeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EFE4D020277BA80093BE8A /* TumblrFeedUITests.swift */; };
+		59EFE4E120277C520093BE8A /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EFE4E020277C520093BE8A /* PhotosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		59EFE4AD20277BA80093BE8A /* TumblrFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumblrFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59EFE4B020277BA80093BE8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		59EFE4B220277BA80093BE8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		59EFE4B520277BA80093BE8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59EFE4B720277BA80093BE8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59EFE4BA20277BA80093BE8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		59EFE4CC20277BA80093BE8A /* TumblrFeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TumblrFeedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59EFE4D020277BA80093BE8A /* TumblrFeedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrFeedUITests.swift; sourceTree = "<group>"; };
 		59EFE4D220277BA80093BE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59EFE4E020277C520093BE8A /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		59EFE4AF20277BA80093BE8A /* TumblrFeed */ = {
 			isa = PBXGroup;
 			children = (
+				59EFE4E020277C520093BE8A /* PhotosViewController.swift */,
 				59EFE4B020277BA80093BE8A /* AppDelegate.swift */,
-				59EFE4B220277BA80093BE8A /* ViewController.swift */,
 				59EFE4B420277BA80093BE8A /* Main.storyboard */,
 				59EFE4B720277BA80093BE8A /* Assets.xcassets */,
 				59EFE4B920277BA80093BE8A /* LaunchScreen.storyboard */,
@@ -259,8 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59EFE4B320277BA80093BE8A /* ViewController.swift in Sources */,
 				59EFE4B120277BA80093BE8A /* AppDelegate.swift in Sources */,
+				59EFE4E120277C520093BE8A /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +432,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = testCompany.TumblrFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -446,7 +446,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = testCompany.TumblrFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
