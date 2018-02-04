@@ -37,6 +37,9 @@ https://i.imgur.com/cHau5So.gif
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 
+## Notes
+
+I had trouble trying to make the table view cells big enough to display the full photo
 
 ## License
 
