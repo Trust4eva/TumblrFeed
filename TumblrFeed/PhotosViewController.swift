@@ -58,6 +58,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource {
             let urlString = originalSize["url"] as! String
             let url = URL(string: urlString)
             cell.PhotoView.af_setImage(withURL: url!)
+            self.tableView.rowHeight = 200
         }
         
         
