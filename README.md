@@ -59,7 +59,7 @@ I had trouble trying to make the table view cells big enough to display the full
 
 # Lab 2 - TumblrFeed
 
-**TumblrFeed** is a photo browsing app app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
+**TumblrNews** is a photo browsing app app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
 
 Time spent: 5 hours spent in total
 
