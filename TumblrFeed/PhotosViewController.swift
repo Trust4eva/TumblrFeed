@@ -36,11 +36,15 @@ class PhotosViewController: UIViewController, UITableViewDataSource {
                 self.posts = responseDictionary["posts"] as! [[String: Any]]
                 self.tableView.reloadData()
                 
+              
                 
                 
             }
         }
         task.resume()
+     
+        
+        
         
     }
     
@@ -72,11 +76,12 @@ class PhotosViewController: UIViewController, UITableViewDataSource {
         let photos = posts[indexPath.row]
         let vc = segue.destination as! PhotoDetailsViewController
         vc.photos = photos
+        tableView.deselectRow(at: indexPath, animated: true)
         
         }
         
-        
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
