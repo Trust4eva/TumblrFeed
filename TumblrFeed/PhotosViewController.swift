@@ -78,6 +78,8 @@ class PhotosViewController: UIViewController, UITableViewDataSource {
         vc.photos = photos
         tableView.deselectRow(at: indexPath, animated: true)
         
+            
+        
         }
         
     }

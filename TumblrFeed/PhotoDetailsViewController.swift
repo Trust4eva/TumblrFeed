@@ -19,7 +19,9 @@ class PhotoDetailsViewController: UIViewController {
         super.viewDidLoad()
         
         if let photos = photos{
-            let originalSize = photos["original_size"] as! [String: Any]
+            let picutre = photos["photos"] as! [[String: Any]]
+            let photo = picutre[0]
+            let originalSize = photo["original_size"] as! [String: Any]
             let urlString = originalSize["url"] as! String
             let url = URL(string: urlString)
             PhotoIV.af_setImage(withURL: url!)
